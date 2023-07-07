@@ -1,0 +1,59 @@
+.usuarios {
+    margin-top: 0;
+    padding-bottom: 90%;
+    display: flex;
+    justify-content: right;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+.banner {
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+.banner img {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 2px solid rgb(88, 18, 218);
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 12px;
+    transition: 0.2s;
+    text-align: start;
+    
+}
+
+table{
+    background-color: white;
+    width: 50%;
+}
+
+tr {
+    background-color: rgba(109, 111, 114, 0.492);
+}
+
+tr:nth-child(odd){
+    background-color: white;
+}
+
+th:nth-child(1){
+    width: 80%;
+    font-size: 12px;
+    
+}
+
+tr:hover {
+    background: #364285;
+}

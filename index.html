@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===============================================================================================-->	
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="/Gerenciamento pecas oficina/frontend/meu_app_front/vendor/animate/animate.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->	
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/table.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <div class="banner">
+            <img src="https://th.bing.com/th/id/R.6f53926c3b2c13c524a5d57a41c0fcb9?rik=8tuEJfhuaJ7adQ&riu=http%3a%2f%2fwmotos.yolasite.com%2fresources%2fLOGOS.jpg&ehk=LQivBSy%2faOSaTg6v9VPLUIV9guubeVgDyLMoZ7AAWK0%3d&risl=&pid=ImgRaw&r=0"
+                alt="y">
+                
+        </div>
+                
+        <title>Projeto</title>
+</head>
+    <body style="background-color: #666666;">
+
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <form method="POST" class="login100-form validate-form" action="javascript:newItem()">
+                        <span class="login100-form-title p-b-43">
+                            Cadastrar Cliente
+                        </span>
+                        
+                        
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="input100" type="text" id="newInput" placeholder="Adicionar novo usuario:">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+                        
+                        
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="input100" id="newSurname" placeholder="sobrenome:">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+
+
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="input100" id="newCPF" placeholder="cpf:" onkeypress="$(this).mask('000.000.000-00');">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+                        
+
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="input100" id="newBirth_date" placeholder="data_nascimento:" onkeypress="$(this).mask('00/00/0000');">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+
+
+                        <div class="wrap-input100 validate-input">
+                            <input type="text" class="input100" id="newLogin" placeholder="login:">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+
+
+                        <div class="wrap-input100 validate-input">
+                            <input type="password" class="input100" id="newPassword" placeholder="senha:">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+
+
+                        <div class="wrap-input100 validate-input">
+                            <input type="password" class="input100" id="newPassword_again" placeholder="senha_novamente:">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+                    
+                        <div class="wrap-input100 validate-input">
+                            <input type="email" class="input100" id="newEmail" name="email" placeholder="email:" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="email@email.com">
+                            <span class="focus-input100"></span>
+                            <span class="label-input100"></span>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <input type="submit" class="login100-form-btn">
+                        </div>
+                        
+                        <div class="text-center p-t-46 p-b-20">
+                            <span class="txt2">
+                                or sign up using
+                            </span>
+                        </div>
+
+                        <div class="login100-form-social flex-c-m">
+                            <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+                                <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+
+                            <a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        
+                    </form>
+                    <section class="usuarios">
+                        <table id="myTable">
+                            <tr>
+                                <th>Primeiro_nome</th>
+                                <th>sobrenome</th>
+                                <th>CPF_do_Usuario</th>
+                                <th>data_nascimento</th>
+                                <th>email</th>
+                                <th>login</th>
+                                <th>senha</th>
+                                <th>repita_senha</th>
+                                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                            </tr>
+                        </table>
+                    </section>
+                
+                </div>
+            </div>
+        </div>
+    
+        
+            
+        
+
+        <script src="scripts.js"></script>
+                
+                
+        
+            
+    
+
+        
+
+
+    </body>
+</html>
+
+
